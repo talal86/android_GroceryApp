@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/textAlert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/are_you_sure"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="5dp"
+                android:textSize="@dimen/first_item"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/noButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/textAlert"
+                android:text="@string/no"
+                android:background="@color/background"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:id="@+id/yesButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_below="@id/textAlert"
+                android:layout_alignParentRight="true"
+                android:text="@string/yes"
+                android:background="@color/background"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"
+                android:layout_alignBottom="@id/noButton"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
